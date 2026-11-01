@@ -1,0 +1,103 @@
+
+/* Exercise 6.1 - Visualisation CSS */
+
+.responsive-svg-container {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+.responsive-svg-container svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.histogram-bar {
+    fill: #606464;
+}
+
+.histogram-bar:hover {
+    opacity: 0.8;
+}
+
+.axis-label {
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+}
+
+.tick text {
+    font-size: 11px;
+}
+
+.tick line {
+    stroke: #999;
+}
+
+.domain {
+    stroke: #555;
+}
+
+/* Exercise 6.3 - Scatter Plot */
+
+#scatterplot {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#scatterplot svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.scatter-point {
+    cursor: pointer;
+}
+
+.scatter-point:hover {
+    opacity: 1;
+}
+
+/* Tooltip */
+
+#scatter-tooltip {
+    position: fixed;
+    width: 235px;
+    padding: 10px 12px;
+    box-sizing: border-box;
+
+    background-color: #fff;
+    color: #222;
+
+    border: 1px solid #999;
+    border-radius: 5px;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+
+    pointer-events: none;
+    z-index: 9999;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Exercise 6.4 - SVG Tooltip */
+
+#scatterplot .tooltip {
+    pointer-events: none;
+}
+
+#scatterplot .tooltip text {
+    font-family: Arial, sans-serif;
+}
+
+#scatterplot .scatter-point {
+    cursor: pointer;
+}

@@ -1,0 +1,72 @@
+
+/* Exercise 6.1 - Base CSS */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffaf0;
+    color: #222;
+}
+
+main {
+    max-width: 900px;
+    margin: 36px auto;
+    padding: 0 18px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#data-status {
+    color: #555;
+    font-size: 13px;
+}
+
+/* Exercise 6.2 - Interactive Filters */
+
+#filters_screen {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0 15px;
+}
+
+#filters_screen .filter {
+    background-color: #c96b28;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 25px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#filters_screen .filter:hover {
+    background-color: #a95119;
+}
+
+#filters_screen .filter.active {
+    background-color: #f5c77d;
+    color: #222;
+}
+
+#filters_screen .filter:focus-visible {
+    outline: 3px solid #333;
+    outline-offset: 2px;
+}
